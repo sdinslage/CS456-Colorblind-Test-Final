@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Color Blindness</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="youTube.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Color Blindness</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#third-container">Types</a></li>
+            <li><a href="#second-container">Testing</a></li>
+            <li><a href="#fifth-container">More Information</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center" id="first-container">
+      <h3 class="margin">What Do You See</h3> <br>
+      <img
+        src="./test_images/img1.jpg"
+        class="img-responsive img-circle margin"
+        style="display: inline"
+        width="350"
+        height="350"
+      />
+      <h3>Do You See a Number or Letter.</h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center" id="second-container">
+      <h3 class="margin">What is Color Blindness</h3>
+      <p>
+        Color blindness, also known as color vision deficiency, is a visual impairment that affects a person's ability to perceive and distinguish specific colors. It occurs when the photoreceptor cells in the eye, called cones, responsible for detecting different wavelengths of light, do not function correctly. As a result, individuals with color blindness may have difficulty distinguishing between certain colors, such as red and green or blue and yellow. This condition can vary in severity, with some people experiencing mild color vision deficiencies, while others may have more significant challenges in perceiving and recognizing colors. Color blindness is typically an inherited genetic condition, and its impact on daily life can vary from person to person. Our website provides a simple test that can help you assess your own color vision and gain a better understanding of how it may affect your perception of the world around you.
+      </p><br>
+      <a href="test.html" target="_self" class="btn btn-default btn-lg">
+        <span class="test"></span> Take The Test.
+      </a>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center" id="third-container">
+      Hover over image <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <h1>Protanopia</h1>
+          <p>
+            Protanopia is a type of color blindness characterized by the absence or malfunction of the long-wavelength cones (red cones) in the retina of the eye. This deficiency leads to difficulties in perceiving the color red and can result in a limited ability to distinguish between red and green hues. As a result, individuals with Protanopia may often mistake red and green objects or see them as shades of gray or other colors. This condition is typically inherited and affects individuals throughout their lives. <br><br>
+          </p>
+
+          <div class="image-container">
+            <img
+              src="./test_images/normalImg.jpg"
+              class="img-responsive margin"
+              style="width: 100%"
+              alt="Image"
+            />
+            <div
+              class="image-overlay"
+              style="background-image: url('./test_images/Protanopia.jpg')"
+            ></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <h1>Deuteranopia</h1>
+          <p>
+            Deuteranopia is another form of color blindness, primarily affecting the middle-wavelength cones (green cones) in the retina. People with Deuteranopia have difficulty distinguishing between shades of green and red. This means they may perceive these colors as gray or other hues, making tasks like reading traffic signals or identifying ripe fruits a challenge. Deuteranopia is also an inherited condition, and its severity can vary from person to person. <br> <br>
+          </p>
+          <div class="image-container">
+            <img
+              src="./test_images/normalImg.jpg"
+              class="img-responsive margin"
+              style="width: 100%"
+              alt="Image"
+            />
+            <div
+              class="image-overlay"
+              style="background-image: url('./test_images/Deuteranopia.jpg')"
+            ></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <h1>Tritanopia</h1>
+          <p>
+            Tritanopia, the least common of the three, results from the absence or malfunction of the short-wavelength cones (blue cones) in the eye's retina. This type of color blindness leads to difficulty distinguishing between blue and yellow colors. Individuals with Tritanopia may perceive these colors as gray or other shades, affecting their ability to differentiate between certain objects. Unlike Protanopia and Deuteranopia, Tritanopia is not a sex-linked genetic condition, and it can sometimes be acquired due to eye damage or certain medical conditions. <br>
+          </p>
+          <div class="image-container">
+            <img
+              src="./test_images/normalImg.jpg"
+              class="img-responsive margin"
+              style="width: 100%"
+              alt="Image"
+            />
+            <div
+              class="image-overlay"
+              style="background-image: url('./test_images/Tritanopia.jpg')"
+            ></div>
+          </div>
+      </div>
+    </div>
+
+      <!-- Add this code below to play three YouTube videos in the third container -->
+      <div class="row">
+        <div class="col-sm-4 offset-sm-4">
+          <h3>Sample Video of Protanopia</h3>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/KcB_NhUNP0I"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Sample Video of Deuteranopia</h3>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/-UNQxXfY2AI"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Sample Video of Tritanopia</h3>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/ZW2NVBvI9TA"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- FithContainer -->
+    <div class="container-fluid bg-5 text-center" id="fifth-container">
+      <h3 class="margin">More Information</h3>
+      <p>
+        For more information, please visit one of the links below. Feel free to
+        retake the test as many times as you like.
+      </p>
+
+      <p>
+        <a
+          href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness#:~:text=What%20is%20color%20blindness%3F,vision%20deficiency%20runs%20in%20families"
+          target="_blank"
+          >National Eye Institute - Color Blindness</a
+        ><br />
+        <a href="https://en.wikipedia.org/wiki/Color_blindness" target="_blank"
+          >Wikipedia - Color Blindness</a
+        ><br />
+        <a
+          href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-vision-deficiency"
+          target="_blank"
+          >Types of Color Vision Deficiency</a
+        ><br />
+        <a
+          href="https://www.aao.org/eye-health/diseases/what-is-color-blindness"
+          target="_blank"
+          >American Academy of Ophthalmology - What is Color Blindness</a
+        >
+      </p>
+    </div>
+
+    <!-- Footer --><!-- Fourth Container -->
+    <footer class="container-fluid bg-4 text-center">
+      <p>UMKC</p>
+    </footer>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Color Blindness</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="youTube.js"></script>
+  </head>
+  </body>
+</html>

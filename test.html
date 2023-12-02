@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Blindness Test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Color Blind Test</h1>
+        <h2>Select the number that you see in the image</h2>
+    </div> 
+    <div class="test-container">
+        <div class="question" id="question1">
+            <img src="/test_images/1-red-green.png" alt="Color Test Image 1" class="test-image">
+        </div>
+        <div class="question" id="question2">
+            <img src="/test_images/7-blue-yellow.png" alt="Color Test Image 2" class="test-image">
+        </div>
+        <div class="question" id="question3">
+            <img src="/test_images/q3-32.png" alt="Color Test Image 3" class="test-image">
+        </div>
+        <div class="question" id="question4">
+            <img src="/test_images/q4-7.png" alt="Color Test Image 4" class="test-image">
+        </div>
+        <div class="question" id="question5">
+            <img src="/test_images/q5-5.png" alt="Color Test Image 5" class="test-image">
+        </div>
+        <div class="question" id="question6">
+            <img src="/test_images/q6-3.png" alt="Color Test Image 6" class="test-image">
+        </div>
+        <div class="question" id="question7">
+            <img src="/test_images/q7-8.png" alt="Color Test Image 7" class="test-image">
+        </div>
+        <div class="question" id="question8">
+            <img src="/test_images/q8-other.png" alt="Color Test Image 8" class="test-image">
+        </div>
+        <div class="question" id="question9">
+            <img src="/test_images/q9-9.png" alt="Color Test Image 9" class="test-image">
+        </div>
+        <div class="question" id="question10">
+            <img src="/test_images/q10-4.png" alt="Color Test Image 10" class="test-image">
+        </div>
+        <!-- Shared answer grid -->
+        <form class="answer-grid" id="shared-answers">
+            <!-- Radio buttons here -->
+            <label><input type="radio" name="answer" value="1"> 1</label>
+            <label><input type="radio" name="answer" value="2"> 2</label>
+            <label><input type="radio" name="answer" value="3"> 3</label>
+            <label><input type="radio" name="answer" value="4"> 4</label>
+            <label><input type="radio" name="answer" value="5"> 5</label>
+            <label><input type="radio" name="answer" value="6"> 6</label>
+            <label><input type="radio" name="answer" value="7"> 7</label>
+            <label><input type="radio" name="answer" value="8"> 8</label>
+            <label><input type="radio" name="answer" value="9"> 9</label>
+            <label class = "wide-answer">
+                <input type="radio" name="q1" value="blank"> Other
+            </label>
+        </form>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <div class="results-container">
+        <h1 id="resultText">Loading results...</h1>
+        <a href="index.html" id="homeLink">Home</a> <!-- Link to Home -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const diagnosis = params.get('diagnosis');
+            const resultText = document.getElementById('resultText');
+
+            switch (diagnosis) {
+                case 'red-green':
+                    resultText.innerText = 'Based on the results: You may have red-green color blindness. This assessment is not approved to diagnose any illness or disorders. If you wish for a complete diagnosis, visit your doctor.';
+                    
+                    break;
+                case 'blue-yellow':
+                    resultText.innerText = 'Based on the results: You may have blue-yellow color blindness.  This assessment is not approved to diagnose any illness or disorders. If you wish for a complete diagnosis, visit your doctor.';
+                    break;
+                case 'monochromia':
+                    resultText.innerText = 'Based on the results: You may have monochromia.  This assessment is not approved to diagnose any illness or disorders. If you wish for a complete diagnosis, visit your doctor.';
+                    break;
+                case 'random-guessing':
+                    resultText.innerText = 'Random Guessing Detected: Cannot Diagnose';
+                    break;
+                default:
+                    resultText.innerText = 'No color blindness detected';
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
+ 
